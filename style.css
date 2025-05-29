@@ -1,12 +1,17 @@
-/* -------- Font -------- */
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
 
-/* -------- Global -------- */
-body {
+/* -------- Global Styles -------- */
+* {
+  box-sizing: border-box;
   margin: 0;
+  padding: 0;
+}
+
+body {
   background: #0f0f0f;
   color: #fff;
   font-family: 'Fira Code', monospace;
+  line-height: 1.6;
 }
 
 h2 {
@@ -29,6 +34,7 @@ p {
 nav {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   background: #111;
   padding: 1rem;
   position: sticky;
@@ -41,6 +47,7 @@ nav a {
   margin: 0 1rem;
   text-decoration: none;
   transition: color 0.3s;
+  font-size: 1rem;
 }
 
 nav a:hover,
@@ -48,7 +55,7 @@ nav a.active {
   color: #784fff;
 }
 
-/* -------- Sections -------- */
+/* -------- Section Styling -------- */
 section {
   max-width: 900px;
   margin: 40px auto;
@@ -56,10 +63,9 @@ section {
   background: #1a1a1a;
   border-left: 4px solid #784fff;
   border-radius: 10px;
-  scroll-margin-top: 100px; 
+  scroll-margin-top: 100px;
 }
 
-/* -------- Home Section -------- */
 #home {
   height: 100vh;
   display: flex;
@@ -69,7 +75,6 @@ section {
   background: #0f0f0f;
   text-align: center;
   padding: 0 20px;
-  margin-top: 0;
   border: none;
 }
 
@@ -78,9 +83,10 @@ section {
   color: #a300d9;
 }
 
-#home .subtitle {
+#home p {
+  font-size: 1.25rem;
+  color: #cbd5e1;
   margin-top: 0.5rem;
-  color: #ccc;
 }
 
 .scroll-indicator {
@@ -96,10 +102,8 @@ section {
 }
 
 /* -------- About Section -------- */
-.about-text {
-  font-size: 1.1rem;
-  line-height: 1.8;
-  color: #ccc;
+.about-content p {
+  font-size: 1rem;
   margin-bottom: 1rem;
   text-align: left;
 }
@@ -122,8 +126,7 @@ section {
   transform: scale(1.3);
 }
 
-
-/* -------- Skills & Projects Boxes -------- */
+/* -------- Skills & Projects -------- */
 .skill-box,
 .project-box {
   background: #222;
@@ -134,15 +137,14 @@ section {
 
 /* -------- Contact Section -------- */
 #contact {
-  scroll-margin-top: 100px; 
-  min-height: 400px;        
+  min-height: auto;
 }
 
-/* -------- Contact Form -------- */
 form {
   display: flex;
   flex-direction: column;
   gap: 15px;
+  margin-top: 1rem;
 }
 
 input,
@@ -152,6 +154,12 @@ textarea {
   border-radius: 5px;
   background: #333;
   color: #fff;
+  font-size: 1rem;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 120px;
 }
 
 button {
@@ -161,6 +169,7 @@ button {
   border: none;
   font-weight: bold;
   cursor: pointer;
+  transition: background 0.3s ease;
 }
 
 button:hover {
@@ -176,4 +185,28 @@ footer {
   margin-top: 60px;
 }
 
+/* -------- Responsive (Mobile) -------- */
+@media (max-width: 768px) {
+  section {
+    padding: 60px 15px;
+  }
 
+  #home h1 {
+    font-size: 2rem;
+  }
+
+  #home p {
+    font-size: 1rem;
+  }
+
+  nav a {
+    font-size: 0.9rem;
+    margin: 0.5rem;
+  }
+
+  .about-content p,
+  .skill-box,
+  .project-box {
+    font-size: 0.95rem;
+  }
+}
