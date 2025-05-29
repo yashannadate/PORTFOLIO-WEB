@@ -7,7 +7,6 @@ It showcases my resume, skills, and personal projects in a simple, clean layout.
 [View Portfolio](https://yashannadate.github.io/PORTFOLIO-WEB/)
 
 ## 📄 Features
-- 🧑‍💼 Resume Download (PDF)
 - 🎨 Responsive Design
 - ⚙️ Fully Static Website
 - 🚀 Hosted via GitHub Pages
