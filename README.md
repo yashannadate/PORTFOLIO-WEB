@@ -1,7 +1,7 @@
 # 💼 Yash Annadate – Portfolio
 
 Built using **HTML**, **CSS**, and **JavaScript**.  
-It showcases my resume, skills, and personal projects in a simple, clean layout.
+It showcases my skills,about me and my projects in a simple, clean layout.
 
 ## 🔗 Live Website
 [View Portfolio](https://yashannadate.github.io/PORTFOLIO-WEB/)
